@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/selection/selection",
+    "pages/doctor/doctor",
+    "pages/message/message",
+    "pages/check/check"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/首页_填充.png",
+        "iconPath": "img/首页.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "img/用户_填充.png",
+        "iconPath": "img/用户.png",
+        "pagePath": "pages/check/check",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "医院挂号系统",
+    "navigationBarTextStyle":"white"
+  }
+}

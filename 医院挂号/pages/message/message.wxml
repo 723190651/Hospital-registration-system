@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="top">
+    <text>信 息 填 写</text>
+  </view>
+  <view class="inputmes">
+    <view class="inputrow">
+      <text>姓  名 ：</text>
+      <input id='name' placeholder='请输入就诊人姓名' class="input" bindinput='Notnull'></input>
+    </view>
+    <view class="inputrow">
+      <text>手机号：</text>
+      <input id='number' placeholder='请输入您的手机号' class="input" bindinput='Notnull'></input>
+    </view>
+  </view>
+  <view class="Button">
+    <button size="default" type="primary" bindtap='Sussecc'>确定</button>
+  </view>
+</view>

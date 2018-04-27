@@ -1,0 +1,71 @@
+page{ 
+background: #f5f5f5; 
+} 
+/*总体主盒子*/ 
+.container { 
+display: flex; 
+width: 100%; 
+height: 100%; 
+background-color: #fff; 
+color: #939393; 
+}
+.nav_left{ 
+/*设置行内块级元素（没使用定位）*/ 
+position: absolute;
+left:0;
+top:0;
+display: inline-block; 
+width: 25%; 
+height: 100%; 
+/*主盒子设置背景色为灰色*/ 
+background: #f5f5f5; 
+text-align: center; 
+}
+.nav_left .nav_left_items{ 
+/*每个高30px*/ 
+height: 40px; 
+/*垂直居中*/ 
+line-height: 40px; 
+/*再设上下padding增加高度，总高42px*/ 
+padding: 6px 0; 
+/*只设下边线*/ 
+border-bottom: 1px solid #dedede; 
+/*文字14px*/ 
+font-size: 14px; 
+} 
+.nav_left .nav_left_items.active{ 
+background: #fff; 
+color: #f0145a; 
+} 
+.nav_right{ 
+position: absolute;
+top: 0; 
+right:0;
+flex: 1;
+width: 75%; 
+height: 100%; 
+padding: 10px; 
+box-sizing: border-box; 
+background: #fff; 
+} 
+.nav_right .nav_right_items{ 
+float: left; 
+width: 33.33%; 
+height: 120px; 
+text-align: center; 
+} 
+.nav_right .nav_right_items text{ 
+display: block; 
+margin-top: 15px; 
+font-size: 14px; 
+color: black;
+overflow: hidden; 
+white-space: nowrap; 
+text-overflow: ellipsis; 
+} 
+.nodata_text
+{
+color: black;
+font-size: 14px; 
+text-align: center; 
+}

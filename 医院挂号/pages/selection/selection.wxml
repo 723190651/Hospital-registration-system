@@ -1,0 +1,26 @@
+<!--主盒子-->
+<view class="container">
+  <!--左侧栏-->
+  <view class="nav_left">
+    <block wx:for="{{caseItems}}">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="nav_left_items {{curNav==item.id ? 'active':''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}" hover-class='#f5f5f5'>{{item.name}}</view>
+    </block>
+  </view>
+  <!--右侧栏-->
+  <view class="nav_right">
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{caseItems[curIndex].ishaveChild}}">
+      <block wx:for="{{caseItems[curIndex].children}}">
+        <view class="nav_right_items">
+          <navigator url="../doctor/doctor">
+              <text>{{item.child_name}}</text>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <!--如果无数据，则显示数据-->
+    <view wx:else>暂无数据</view>
+  </view>
+</view>

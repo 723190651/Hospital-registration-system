@@ -1,0 +1,24 @@
+<!--pages/doctor/doctor.wxml-->
+<view class="container">
+  <view class="top">
+    <text>出 诊 医 生</text>
+  </view>
+  <view class="doctor">
+    <view class="message">
+      <image class="Icon" src='../../img/1.png'></image>
+      <view class="name">
+        <text>孙超</text>
+      </view>
+      <view class="section">
+        <text>内科医生</text>
+      </view>
+    </view>
+    <view class="describe{{showView?'show':''}}">
+      <text class="desc" bindtap='showhide'>孙超 副主任医师，毕业于北京大学医学部。特长长期从事内科临床诊疗工作，在高血压、冠心病、心力衰竭、高脂血症、心律失常等疾病治疗上积累了非常丰富的临床经验.</text>
+    </view>
+    <view class="date">
+      <text bindtap='Selected'>2018-4-24（星期二）上午\n</text>
+      <text bindtap='Selected'>2018-4-24（星期二）下午</text>
+    </view>
+  </view>
+</view>
